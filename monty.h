@@ -7,6 +7,9 @@
 #include <string.h>
 #include <unistd.h>
 
+#define RED_COLOR "\033[0;31m"
+#define RESET_COLOR "\033[0m"
+
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer

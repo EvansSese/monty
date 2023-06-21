@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
     
     if (argc != 2)
     {
-        fprintf(stderr, "USAGE: monty file\n");
+        fprintf(stderr, "%sUSAGE: monty file%s\n", RED_COLOR, RESET_COLOR);
         exit(EXIT_FAILURE);
     }
 

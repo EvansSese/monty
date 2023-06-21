@@ -4,7 +4,6 @@
  * push - Adds element on top of stack
  * @stack: Stack
  * @line_number: line number
- * @stack_value: Value
  * 
  * Return: Nothing
  */
