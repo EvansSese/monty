@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
     while ((read_file = getline(&line, &line_length, file)) != -1)
     {
         line_number++;
-        opcode = strtok(line, " \t\n");
+        opcode = strtok(line, " \n");
 
         if (opcode != NULL && opcode[0] != '#')
         {
@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
 
             if (strcmp(opcode, "push") == 0)
             {
-                char *argument = strtok(NULL, " \t\n");
+                char *argument = strtok(NULL, " \n");
                 if (argument == NULL || !atoi(argument))
                 {
                     fprintf(stderr, "L%d: usage: push integer\n", line_number);
