@@ -45,6 +45,7 @@ int main(int argc, char *argv[])
                     fclose(file);
                     exit(EXIT_FAILURE);
                 }
+		line_number = atoi(argument);
                 instruction.f = push;
             }
             else if (strcmp(opcode, "pall") == 0)

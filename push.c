@@ -4,12 +4,14 @@
  * push - Adds element on top of stack
  * @stack: Stack
  * @line_number: line number
+ * @stack_value: Value
  * 
  * Return: Nothing
  */
 void push(stack_t **stack, unsigned int line_number)
 {
     stack_t *new_node = malloc(sizeof(stack_t));
+
     if (new_node == NULL)
     {
         fprintf(stderr, "Error: malloc failed\n");
