@@ -66,6 +66,8 @@ int main(int argc, char *argv[])
 				instruction.f = nop;
 			else if (strcmp(opcode, "sub") == 0)
                                 instruction.f = sub;
+			else if (strcmp(opcode, "div") == 0)
+				instruction.f = f_div;
 			else
 			{
 				fprintf(stderr, "L%d: unknown instruction %s\n", line_number, opcode);
