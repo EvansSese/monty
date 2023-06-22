@@ -54,6 +54,10 @@ int main(int argc, char *argv[])
 			}
 			else if (strcmp(opcode, "pall") == 0)
 				instruction.f = pall;
+			else if (strcmp(opcode, "pint") == 0)
+				instruction.f = pint;
+			else if (strcmp(opcode, "pop") == 0)
+				instruction.f = pop;
 			else
 			{
 				fprintf(stderr, "L%d: unknown instruction %s\n", line_number, opcode);
