@@ -70,6 +70,8 @@ int main(int argc, char *argv[])
 				instruction.f = f_div;
 			else if (strcmp(opcode, "mul") == 0)
                                 instruction.f = mul;
+			else if (strcmp(opcode, "mod") == 0)
+				instruction.f = mod;
 			else
 			{
 				fprintf(stderr, "L%d: unknown instruction %s\n", line_number, opcode);
