@@ -74,6 +74,8 @@ int main(int argc, char *argv[])
 				instruction.f = mod;
 			else if (strcmp(opcode, "pchar") == 0)
                                 instruction.f = pchar;
+			else if (strcmp(opcode, "pstr") == 0)
+                                instruction.f = pstr;
 			else
 			{
 				fprintf(stderr, "L%d: unknown instruction %s\n", line_number, opcode);
