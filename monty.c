@@ -60,6 +60,8 @@ int main(int argc, char *argv[])
 				instruction.f = pop;
 			else if (strcmp(opcode, "swap") == 0)
 				instruction.f = swap;
+			else if (strcmp(opcode, "add") == 0)
+				instruction.f = add;
 			else if (strcmp(opcode, "nop") == 0)
 				instruction.f = nop;
 			else
