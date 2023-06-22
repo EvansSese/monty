@@ -58,6 +58,8 @@ int main(int argc, char *argv[])
 				instruction.f = pint;
 			else if (strcmp(opcode, "pop") == 0)
 				instruction.f = pop;
+			else if (strcmp(opcode, "swap") == 0)
+                                instruction.f = swap;
 			else
 			{
 				fprintf(stderr, "L%d: unknown instruction %s\n", line_number, opcode);
