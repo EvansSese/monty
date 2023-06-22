@@ -61,7 +61,7 @@ int main(int argc, char *argv[])
 			else if (strcmp(opcode, "swap") == 0)
 				instruction.f = swap;
 			else if (strcmp(opcode, "nop") == 0)
-				continue;
+				instruction.f = nop;
 			else
 			{
 				fprintf(stderr, "L%d: unknown instruction %s\n", line_number, opcode);
