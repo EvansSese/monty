@@ -7,8 +7,8 @@
  */
 int is_integer(const char *argument)
 {
-    if (argument == NULL || *argument == '\0')
-	    return (0);
-    else
-	    return (1);
+	if (argument == NULL || *argument == '\0')
+		return (0);
+	else
+		return (1);
 }
